@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(176, 222, 240);
+    padding-top: 40px;
+}
+
+.main {
+
+    width: 25%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.searchinput {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 7px;
+}
+
+.search{
+    padding: 18px;
+}
+
+input {
+    display: flex;
+    flex: 1;
+    /* padding: 45px; */
+    border-radius: 10px;
+    border: 2px solid #3498db;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+input::placeholder {
+    color: rgb(7, 7, 7);
+}
+
+.searchicon {
+    background-color: blue;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.searchicon:hover {
+    background-color: rgb(97, 143, 229);
+    color: black;
+    border: #3498db;
+}
+
+input:hover {
+    border: 2px solid black;
+}
+
+.place-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.date {
+    padding: 5px;
+    background-color: #a8d6f5;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-weight: 30px;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.tempinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.description-temp {
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-bottom: 1px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: small;
+}
+
+.temp {
+    height: 30vh;
+    font-size: 160px;
+    color: rgb(235, 182, 82);
+    margin-left: 25px;
+}
+
+.additionalinfo {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.winblow {
+    
+    font-family: serif;
+    font-size: 20px;
+    background-color: rgb(242, 235, 235);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1;
+    width: 23%;
+    
+}
+
+.winblow:hover {
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+}
+
+.Humidityinfo {
+    
+    width: 23%;
+    font-family: serif;
+    font-size: 20px;
+    background-color: rgb(242, 235, 235);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.Humidityinfo:hover {
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+}
+
+.visibilityinfo {
+    
+    font-family: serif;
+    font-size: 20px;
+    background-color: rgb(242, 235, 235);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1;
+    width: 23%;
+}
+
+.visibilityinfo:hover {
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+}
+
+
+
+
+@media (max-width: 1300px) {
+    .main {
+        width: 33%;
+    }
+}
+
+
+
+
+@media (max-width: 1119px) {
+
+    .winblow {
+        padding: 10px;
+        z-index: 1;
+        margin-left: 4px;
+        font-size: 10px;
+        width: 45px;
+    }
+
+    .Humidityinfo {
+        font-size: 10px;
+        width: 45px;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .visibilityinfo {
+        font-size: 10px;
+        padding: 10px;
+        z-index: 1;
+        width: 45px;
+    }
+
+    .searchinput {
+        gap: 5px;
+    }
+
+    input {
+        padding: 3px;
+        font-size: 0.9rem;
+        width: 20px;
+    }
+
+    .temp {
+        font-size: 80px;
+        height: 20vh;
+    }
+    .additionalinfo {
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .main {
+        width: 30%;
+    }
+}
+
+
+
+
+@media (max-width: 780px) {
+
+    .winblow {
+        padding: 10px;
+        z-index: 1;
+        margin-left: 2px;
+        font-size: 8px;
+        width: 30px;
+    }
+
+    .Humidityinfo {
+        font-size: 8px;
+        width: 30px;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .visibilityinfo {
+        font-size: 8px;
+        padding: 10px;
+        z-index: 1;
+        width: 20px;
+    }
+
+}
